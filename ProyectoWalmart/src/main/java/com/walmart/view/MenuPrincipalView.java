@@ -1,5 +1,6 @@
 package com.walmart.view;
 
+import com.wallmart.controller.services.ProductServices;
 import java.util.Scanner;
 
 public class MenuPrincipalView {
@@ -9,7 +10,7 @@ public class MenuPrincipalView {
     private String textoConsola;
     private int opcion;
     private int opcion2;
-    
+    ProductServices productos = new ProductServices ();
     
     public void MenuBienvenidos(){
         System.out.println("********************************************************************************************************");
@@ -58,6 +59,7 @@ public class MenuPrincipalView {
             opcion = scanner.nextInt();
             switch (opcion) {
                 case 1:
+                    productos.agregarProducto();
                     System.out.println("Desea regresar al menu principal?");
                     System.out.println("");
                     System.out.println("1: SI // 2 o cualquier otra tecla: NO");
@@ -65,6 +67,7 @@ public class MenuPrincipalView {
                     break;
 
                 case 2:
+                    productos.listarProductos();
                     System.out.println("Desea regresar al menu principal?");
                     System.out.println("");
                     System.out.println("1: SI // 2 o cualquier otra tecla: NO");
@@ -72,6 +75,7 @@ public class MenuPrincipalView {
                     break;
 
                 case 3:
+                    productos.editarProducto();
                     System.out.println("Desea regresar al menu principal?");
                     System.out.println("");
                     System.out.println("1: SI // 2 o cualquier otra tecla: NO");
@@ -79,6 +83,7 @@ public class MenuPrincipalView {
                     break;
 
                 case 4:
+                    productos.eliminarProducto();
                     System.out.println("Desea regresar al menu principal?");
                     System.out.println("");
                     System.out.println("1: SI // 2 o cualquier otra tecla: NO");
@@ -86,6 +91,7 @@ public class MenuPrincipalView {
                     break;
 
                 case 5:
+                    productos.reporte();
                     System.out.println("Desea regresar al menu principal?");
                     System.out.println("");
                     System.out.println("1: SI // 2 o cualquier otra tecla: NO");
@@ -93,6 +99,7 @@ public class MenuPrincipalView {
                     break;
 
                 case 6:
+
 
                     break;
 

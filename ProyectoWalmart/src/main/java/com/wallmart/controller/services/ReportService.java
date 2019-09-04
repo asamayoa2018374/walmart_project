@@ -27,15 +27,21 @@ public class ReportService {
             bw.newLine();
             bw.write("------------------------------------------------ REPORTE -------------------------");
             bw.newLine();
+            bw.newLine();
             for (Iterator<Producto> iterator = productos.iterator(); iterator.hasNext();) {
                 Producto next = iterator.next();
                 bw.write("*****************************************************************************");
                 bw.newLine();
-                bw.write("ID: ------> "+next.getCodigo());
-                bw.write("NOMBRE:  ------> "+next.getNombre());
-                bw.write("CANTIDAD: ------> "+next.getCantidad());
+                bw.newLine();
+                bw.write("ID: ------> " + next.getCodigo());
+                bw.newLine();
+                bw.write("NOMBRE:  ------> " + next.getNombre());
+                bw.newLine();
+                bw.write("CANTIDAD: ------> " + next.getCantidad());
+                bw.newLine();
                 bw.newLine();
                 bw.write("*****************************************************************************");
+                bw.newLine();
                 bw.newLine();
             };
             bw.close();
