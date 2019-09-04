@@ -43,7 +43,6 @@ public class ProductServices {
         producto.setPrecioUnitario(precioUnitario);
         producto.setPrecioDocena(precioDocena);
 
-        productoJpa.createProduct(producto);
 
         if (!productoJpa.createProduct(producto)) {
             System.out.println("producto ya existente");

@@ -99,7 +99,7 @@ public class MenuPrincipalView {
                     break;
 
                 case 6:
-
+                    System.exit(0);
 
                     break;
 
